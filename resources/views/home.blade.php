@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('content')
@@ -41,7 +40,7 @@
 
         <label for="cep">Digite o CEP:</label>
         <input type="text" name="cep" id="cep" placeholder="Ex: 12345678" required>
-        <button type="submit">Consultar</button>
+        <button type="submit">Salvar</button>
         <br><br>
 
       </div>
