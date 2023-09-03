@@ -1,16 +1,10 @@
 <?php
 
+use App\Livewire\SearchZipcode;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'welcome';
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::middleware(['auth'])->group(function () {
-  Route::get('/dashboard', 'UserController@dashboard')->name('dashboard');
-});
-
+Route::get('/app', SearchZipcode::class)->name('search-zipcode');
