@@ -17,3 +17,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+/config/sanctum.php
+config/sanctum.php
+.gitignore
