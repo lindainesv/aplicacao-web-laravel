@@ -1,10 +1,10 @@
 <div>
   <form class=" p-8 bg-gray-200 flex flex-col w-1/2 mx-auto gap-4">
-    <h1>Search Zipcode</h1>
+    <h1>Pesquisar CEP</h1>
 
      <div class="flex flex-col w-1/2">
       <label for="zipcode">CEP</label>
-      <input class="border"  id="zipcode" type="text" wire:model.lazy="zipcode"/>
+      <input class="border" id="zipcode" type="text" wire:model.lazy="zipcode"/>
       @error('zipcode')
         <span class="text-red-500">{{ $message }}</span>
       @enderror
@@ -34,7 +34,7 @@
       @enderror
      </div>
 
-     <div class="flex flex-col w-1/2">
+    <div class="flex flex-col w-1/2">
       <label for="state">Estado</label>
       <input class="border" id="state" type="text" wire:model="state"/> 
       @error('state')
