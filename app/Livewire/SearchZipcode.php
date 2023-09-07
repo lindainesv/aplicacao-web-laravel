@@ -32,7 +32,6 @@ class SearchZipcode extends Component
   public string $neighborhood = '';
   public string $city = '';
   public string $state = '';
-
   public array $address = [];
   
   public function updatedZipcode(string $value) { 
