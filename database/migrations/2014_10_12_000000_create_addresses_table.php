@@ -9,11 +9,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('addresses', function (Blueprint $table) {
-            $table->string('zipcode')->nullable();
-            $table->string('street')->nullable();
-            $table->string('neighborhood')->nullable();
-            $table->string('city')->nullable();
-            $table->char('state', 2)->nullable();
+            $table->string('zipcode');
+            $table->string('street');
+            $table->string('neighborhood');
+            $table->string('city');
+            $table->char('state', 2);
             $table->timestamps();
 
         });
